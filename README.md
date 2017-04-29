@@ -23,5 +23,8 @@ compressed separately as a JPEG image.The MJPEG video codec is mostly used in IP
 
 This is an attempt to reduce the file size of MJPEG videos without affecting the perceived video quality.
 
-## Methodolody
+## Methodology
+
+An MJPEG video is just a series of JPEG frames and thus we need to find the quality at which there is no perceived quality loss.
+>Butteraugli is a project that estimates the psychovisual similarity of two images. It gives a score for the images that is reliable in the domain of barely noticeable difference.
 
