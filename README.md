@@ -5,13 +5,11 @@ compressed separately as a JPEG image.The MJPEG video codec is mostly used in IP
 
 ## Advantages of MJPEG
 
-* MJPEG video codec produces  higher quality videos compared to codecs based on temporal interframe compression such as H.264.Temporal interface compressions codecs use  sophisticated algorithms to apply compression across the video as a whole discarding data in the process.
+* MJPEG video codec produces  higher quality videos compared to codecs based on temporal interframe compression such as H.264.Temporal interface compressions codecs use  sophisticated algorithms to apply compression across the video as a whole discarding data in the process.Compression schemes using interframe compression can often experience unacceptable quality loss when the video content changes significantly between each frame.
 
 * MJPEG is simple to implement as is non-proprietary and the variance from one manufacturer to the next is typically minimal.In comparison H.264 have many variants and its implementation different from one  
 
 * Uses minimum computing power to encode and decode
-
-* It tolerates rapidly changing motion in the video stream, whereas compression schemes using interframe compression can often experience unacceptable quality loss when the video content changes significantly between each frame.
 
 
 ## Disadvantages of MJPEG
@@ -44,12 +42,16 @@ Based on the data above , we can conclude that the following:
 We will create the following MJPEG videos using ffmpeg
 
 Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg
+
 Original Optimized Video : Consist of JPEG frames generated at a quality of 95 with libjpeg
+
 Guetzli Optimized Video : Consist of JPEG frames generated at a quality of 95 with Guetzli
 
 ## Results
 
 ## Conclusion
+
+## References
 
 ## Authors
 
