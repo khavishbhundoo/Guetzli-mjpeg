@@ -25,6 +25,20 @@ This is an attempt to reduce the file size of MJPEG videos without affecting the
 
 ## Methodology
 
-An MJPEG video is just a series of JPEG frames and thus we need to find the quality at which there is no perceived quality loss.
+An MJPEG video comprises of  a series of JPEG frames.Firsly we convert a sample high quality lossless image into JPEG images of various qualities with different encoders to determine at which quality there is no perceived quality loss and which decoder produces the smallest JPEG. 
+
 >Butteraugli is a project that estimates the psychovisual similarity of two images. It gives a score for the images that is reliable in the domain of barely noticeable difference.
+
+We need to achieve a butteraugli score of less than one to ensure that the visual quality isn't affected.
+
+![Decoder comparisions](https://i.gyazo.com/10109b35b7d03a4b6a51d0009c30ca8a.png "Decoder comparisions")
+
+Based on the data above , we can conclude that the following:
+
+* Regardless of the jpeg encoder used , quality 95 is the sweet spot where we get great quality with file size saving
+* Guetzli generates the smallest JPEG at a given quality
+* libjpeg-turbo generates slighly better JPEG than all other decoders.However at a quality setting of 95 its irrelevant as the perceived quality loss is not noticeable for all encoders.
+
+
+
 
