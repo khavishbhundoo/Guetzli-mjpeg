@@ -23,7 +23,7 @@ This is an attempt to reduce the file size of MJPEG videos without affecting the
 
 ## Methodology
 
-An MJPEG video comprises of  a series of JPEG frames.Firsly we convert a sample high quality lossless image into JPEG images of various qualities with different encoders to determine at which quality there is no perceived quality loss and which decoder produces the smallest JPEG. 
+An MJPEG video comprises of  a series of JPEG frames.Firstly we convert a sample high quality lossless image into JPEG images of various qualities with different encoders to determine at which quality there is no perceived quality loss and which decoder produces the smallest JPEG. 
 
 >Butteraugli is a project that estimates the psychovisual similarity of two images. It gives a score for the images that is reliable in the domain of barely noticeable difference.
 
@@ -39,13 +39,29 @@ Based on the data above , we can conclude that the following:
 * Guetzli generates the smallest JPEG at a given quality
 * libjpeg-turbo generates slighly better JPEG than all other decoders.However at a quality setting of 95 its irrelevant as the perceived quality loss is not noticeable for all encoders.
 
-We will create the following MJPEG videos using ffmpeg
+An MJPEG lossless 25 frames per seconds(fps) video with a duration of 10 is created from the generated JPEG. 
+
+The following videos are then created
 
 Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg
 
 Original Optimized Video : Consist of JPEG frames generated at a quality of 95 with libjpeg
 
 Guetzli Optimized Video : Consist of JPEG frames generated at a quality of 95 with Guetzli
+
+The ffmpeg command used to generate the videos is as follows:
+
+`ffmpeg -f image2 -s 444x258 -framerate 25 -i bees%01d.jpg -codec copy  video.mp4`
+
+`-f image2` --> tells ffmpeg to select a group of images
+
+`-s 444x258`  --> the resolution of the video
+
+`-framerate 25` -->  set the framerate to 25(default).The framerate of a video encoded by ffmpeg is 25 by default.This option is here just for completely
+
+`-codec copy` --> tells ffmpeg to not encode the JPEG again due to generation loss
+
+`video.mp4` --> name of generated video
 
 ## Results
 
