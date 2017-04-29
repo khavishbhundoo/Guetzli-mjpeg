@@ -41,8 +41,15 @@ Based on the data above , we can conclude that the following:
 * Guetzli generates the smallest JPEG at a given quality
 * libjpeg-turbo generates slighly better JPEG than all other decoders.However at a quality setting of 95 its irrelevant as the perceived quality loss is not noticeable for all encoders.
 
-We will create the following MJPEG videos
+We will create the following MJPEG videos using ffmpeg
 
-Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg  
+Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg
+Original Optimized Video : Consist of JPEG frames generated at a quality of 95 with libjpeg
 Guetzli Optimized Video : Consist of JPEG frames generated at a quality of 95 with Guetzli
+
+## Results
+
+## Conclusion
+
+## Authors
 
