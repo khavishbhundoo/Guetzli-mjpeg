@@ -43,7 +43,7 @@ An MJPEG lossless 25 frames per seconds(fps) video with a duration of 10 is crea
 
 The following videos are then created
 
-Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg
+Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg(lossless)
 
 Original Optimized Video : Consist of JPEG frames generated at a quality of 95 with libjpeg
 
@@ -64,10 +64,15 @@ The ffmpeg command used to generate the videos is as follows:
 `video.mp4` --> name of generated video
 
 ## Results
-
+![Results](https://i.gyazo.com/b75bb2adb9546a9a70555ad2881315ea.png "Results")
 ## Conclusion
-
+We managed to reduce the file size of the video by 74.46% without any noticeable visual quality loss. 
 ## References
+https://github.com/google/butteraugli
+https://github.com/google/guetzli
 
 ## Authors
+Jyrki Alakuijala ( @jyrkialakuijala )
+
+Khavish Anshudass Bhundoo 
 
