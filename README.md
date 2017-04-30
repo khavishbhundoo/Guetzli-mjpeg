@@ -69,6 +69,7 @@ The ffmpeg command used to generate the videos is as follows:
 We managed to reduce the file size of the video by 74.46% without any noticeable visual quality loss. 
 ## References
 https://github.com/google/butteraugli
+
 https://github.com/google/guetzli
 
 ## Authors
