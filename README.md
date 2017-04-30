@@ -43,7 +43,7 @@ An MJPEG lossless 25 frames per seconds(fps) video with a duration of 10 is crea
 
 The following videos are then created
 
-Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg(lossless)
+Original Video : Consist of JPEG frames generated at a quality of 100 with libjpeg
 
 Original Optimized Video : Consist of JPEG frames generated at a quality of 95 with libjpeg
 
