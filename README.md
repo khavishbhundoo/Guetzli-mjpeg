@@ -7,14 +7,14 @@ compressed separately as a JPEG image.The MJPEG video codec is mostly used in IP
 
 * MJPEG video codec produces  higher quality videos compared to codecs based on temporal interframe compression such as H.264.Temporal interface compressions codecs use  sophisticated algorithms to apply compression across the video as a whole discarding data in the process.Compression schemes using interframe compression can often experience unacceptable quality loss when the video content changes significantly between each frame.
 
-* MJPEG is simple to implement as is non-proprietary and the variance from one manufacturer to the next is typically minimal.In comparison H.264 have many variants and its implementation different from one  
+* MJPEG is simple to implement as is non-proprietary and the variance from one manufacturer to the next is typically minimal.In comparison H.264 have many variants and its implementation differ from one  manufacturer to the next. 
 
 * Uses minimum computing power to encode and decode
 
 
 ## Disadvantages of MJPEG
 
-* Video produced with MJPEG are often huge in size compared to temporal interframe compression vodecs such as H.264.
+* Videos produced with MJPEG are often huge in size compared to temporal interframe compression vodecs such as H.264.
 
 
 ## Aim 
@@ -59,20 +59,20 @@ The ffmpeg command used to generate the videos is as follows:
 
 `-framerate 25` -->  set the framerate to 25(default).The framerate of a video encoded by ffmpeg is 25 by default.This option is here just for completely
 
-`-codec copy` --> tells ffmpeg to not encode the JPEG again due to generation loss
+`-codec copy` --> tells ffmpeg to not encode the JPEG again due to [generation loss](https://en.wikipedia.org/wiki/Generation_loss)
 
 `video.mp4` --> name of generated video
 
 ## Results
 ![Results](https://i.gyazo.com/b75bb2adb9546a9a70555ad2881315ea.png "Results")
 ## Conclusion
-We managed to reduce the file size of  MJPEG videos by up to 74% without any noticeable visual quality loss.At the time of this writing , it might not be practical to use guetzli as the de-facto JPEG encoder due to performance issues.Nevertheless significant file savings , around 62% in our case , have been obtained even with a standard decoder like libjpeg.Guetzli can be use in situations where sufficient resource is available or when processing time is not an issue (i.e for archiving purposes).
+We managed to reduce the file size of  MJPEG videos by up to 74% without any noticeable visual quality loss.At the time of this writing , it might not be practical to use guetzli as the de-facto JPEG encoder due to [performance issues](https://github.com/google/guetzli/issues/50).Nevertheless significant file savings , around 62% in our case , have been obtained even with a standard decoder like libjpeg.Guetzli can be use in situations where sufficient resource is available or when processing time is not an issue (i.e for archiving purposes).
 ## References
 https://github.com/google/butteraugli
 
 https://github.com/google/guetzli
 
-https://en.wikipedia.org/wiki/Generation_loss
+
 
 ## Authors
 Jyrki Alakuijala ( @jyrkialakuijala )
