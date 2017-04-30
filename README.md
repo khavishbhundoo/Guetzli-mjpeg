@@ -66,11 +66,13 @@ The ffmpeg command used to generate the videos is as follows:
 ## Results
 ![Results](https://i.gyazo.com/b75bb2adb9546a9a70555ad2881315ea.png "Results")
 ## Conclusion
-We managed to reduce the file size of the video by 74.46% without any noticeable visual quality loss. 
+We managed to reduce the file size of  MJPEG videos by up to 74% without any noticeable visual quality loss.At the time of this writing , it might not be practical to use guetzli as the de-facto JPEG encoder due to performance issues.Nevertheless significant file savings , around 62% in our case , have been obtained even with a standard decoder like libjpeg.Guetzli can be use in situations where sufficient resource is available or when processing time is not an issue (i.e for archiving purposes).
 ## References
 https://github.com/google/butteraugli
 
 https://github.com/google/guetzli
+
+https://en.wikipedia.org/wiki/Generation_loss
 
 ## Authors
 Jyrki Alakuijala ( @jyrkialakuijala )
