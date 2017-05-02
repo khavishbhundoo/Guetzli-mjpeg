@@ -68,7 +68,7 @@ The ffmpeg command used to generate the videos is as follows:
 ## Conclusion
 We managed to reduce the file size of  MJPEG videos by up to 74% without any noticeable visual quality loss.At the time of this writing , it might not be practical to use guetzli as the de-facto JPEG encoder due to [performance issues](https://github.com/google/guetzli/issues/50).Nevertheless significant file savings , around 62% in our case , have been obtained even with a standard decoder like libjpeg.Guetzli can be use in situations where sufficient resource is available or when processing time is not an issue (i.e for archiving purposes).
 
-In situation where minimal quality loss is acceptable(i.e anything except IP cameras) , the file size of MJPEG videos can still be reduced.
+In situations where minimal quality loss is acceptable(i.e anything except IP cameras) , the file size of MJPEG videos can still be reduced.
 
 Guetzli Optimized Video(90) : Consist of JPEG frames generated at a quality of 90 with Guetzli
 
