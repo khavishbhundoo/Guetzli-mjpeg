@@ -31,7 +31,7 @@ An MJPEG video comprises of  a series of JPEG frames.Firstly we convert a sample
 
 We need to achieve a butteraugli score of less than one to ensure that the visual quality isn't affected.
 
-![Decoder comparisions](https://i.gyazo.com/10109b35b7d03a4b6a51d0009c30ca8a.png "Decoder comparisions")
+![Decoder comparisions](https://github.com/khavishbhundoo/Guetzli-mjpeg/blob/master/decodercomparisons.png "Decoder comparisions")
 
 Based on the data above , we can conclude that the following:
 
@@ -64,7 +64,7 @@ The ffmpeg command used to generate the videos is as follows:
 `video.mp4` --> name of generated video
 
 ## Results
-![Results](https://i.gyazo.com/b75bb2adb9546a9a70555ad2881315ea.png "Results")
+![Results](https://github.com/khavishbhundoo/Guetzli-mjpeg/blob/master/compression.png "Results")
 ## Conclusion
 We managed to reduce the file size of  MJPEG videos by up to 74% without any noticeable visual quality loss.At the time of this writing , it might not be practical to use guetzli as the de-facto JPEG encoder due to [performance issues](https://github.com/google/guetzli/issues/50).Nevertheless significant file savings , around 62% in our case , have been obtained even with a standard decoder like libjpeg.Guetzli can be use in situations where sufficient resource is available or when processing time is not an issue (i.e for archiving purposes).
 
@@ -72,7 +72,7 @@ In situations where minimal quality loss is acceptable(i.e anything except IP ca
 
 Guetzli Optimized Video(90) : Consist of JPEG frames generated at a quality of 90 with Guetzli
 
-![Video90](https://i.gyazo.com/e7c677e9d3cacd300364f80f4eb8d750.png "Video90")
+![Video90](https://github.com/khavishbhundoo/Guetzli-mjpeg/blob/master/decodercomparisons.png "Video90")
 
 Here is a side by side comparision of Guetzli optimized MJPEG videos
 ![SideBySide](https://i.gyazo.com/56b691cdcee855f5e240530675c6e01a.png "SideBySide")
