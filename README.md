@@ -72,7 +72,7 @@ In situations where minimal quality loss is acceptable(i.e anything except IP ca
 
 Guetzli Optimized Video(90) : Consist of JPEG frames generated at a quality of 90 with Guetzli
 
-![Video90](https://github.com/khavishbhundoo/Guetzli-mjpeg/blob/master/decodercomparisons.png "Video90")
+![Video90](https://github.com/khavishbhundoo/Guetzli-mjpeg/blob/master/compressionfinal.png "Video90")
 
 Here is a side by side comparision of Guetzli optimized MJPEG videos
 ![SideBySide](https://i.gyazo.com/56b691cdcee855f5e240530675c6e01a.png "SideBySide")
