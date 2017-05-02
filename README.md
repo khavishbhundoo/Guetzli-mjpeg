@@ -74,6 +74,8 @@ Guetzli Optimized Video(90) : Consist of JPEG frames generated at a quality of 9
 
 ![Video90](https://i.gyazo.com/e7c677e9d3cacd300364f80f4eb8d750.png "Video90")
 
+Here is a side by side comparision of Guetzli optimized MJPEG videos
+![SideBySide](https://i.gyazo.com/56b691cdcee855f5e240530675c6e01a.png "SideBySide")
 
 
 ## References
