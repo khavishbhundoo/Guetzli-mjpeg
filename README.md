@@ -57,7 +57,8 @@ The ffmpeg command used to generate the videos is as follows:
 
 `-s 444x258`  --> the resolution of the video
 
-`-framerate 25` -->  set the framerate to 25(default).The framerate of a video encoded by ffmpeg is 25 by default.This option is here just for completely
+`-framerate 25` -->  set the framerate to 25(default).The framerate of a video encoded by ffmpeg is 25 by default.This option is here just for completeness
+
 
 `-codec copy` --> tells ffmpeg to not encode the JPEG again due to [generation loss](https://en.wikipedia.org/wiki/Generation_loss)
 
