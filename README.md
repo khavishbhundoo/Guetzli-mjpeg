@@ -1,7 +1,7 @@
 ## Introduction
 
 Motion JPEG (M-JPEG or MJPEG) is a video compression format in which each video frame or interlaced field of a digital video sequence is 
-compressed separately as a JPEG image.The MJPEG video codec is mostly used in IP cameras and cetain digital cameras.
+compressed separately as a JPEG image.The MJPEG video codec is mostly used in IP cameras and certain digital cameras.
 
 ## Advantages of MJPEG
 
